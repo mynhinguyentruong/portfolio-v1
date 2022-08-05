@@ -1,6 +1,15 @@
 import React from 'react'
 import { FaBars } from 'react-icons/fa'
-import { Nav, NavbarContainer, NavLogo, MobileIcon,NavMenu, NavItem, NavLinks } from './NavbarElements'
+import { 
+  Nav, NavbarContainer, 
+  NavLogo, 
+  MobileIcon,
+  NavMenu, 
+  NavItem, 
+  NavLinks, 
+  NavBtn, 
+  NavBtnLink 
+} from './NavbarElements'
 
 export default function Navbar() {
 
@@ -8,7 +17,7 @@ export default function Navbar() {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to='/'>dolla</NavLogo>
+          <NavLogo to='/'>Nhi Nguyen</NavLogo>
           <MobileIcon>
             <FaBars />
           </MobileIcon>
@@ -16,7 +25,19 @@ export default function Navbar() {
             <NavItem>
               <NavLinks to="about">About</NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks to="discover">Discover</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="services">Services</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="signup">Sign Up</NavLinks>
+            </NavItem>
           </NavMenu>
+          <NavBtn>
+            <NavBtnLink to='./signin'>Sign In</NavBtnLink>
+          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>
