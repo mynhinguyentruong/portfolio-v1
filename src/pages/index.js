@@ -3,6 +3,7 @@ import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Info from '../components/InfoSection'
+import { homeObjOne } from '../components/InfoSection/Data'
 
 export default function Home() {
 
@@ -17,7 +18,7 @@ export default function Home() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Hero />
-      <Info />
+      <Info {...homeObjOne} />
     </>
   )
 }

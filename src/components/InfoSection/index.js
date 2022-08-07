@@ -4,25 +4,25 @@ import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Hea
 import { Button } from '../ButtonElement'
 
 
-export default function Info() {
+export default function Info({buttonLabel, lightText, imgStart, lightBg, id, topLine, headline, darkText, description, img, alt }) {
   return (
     <>
-      <InfoContainer >
+      <InfoContainer lightBg={lightBg} id={id} >
         <InfoWrapper>
-          <InfoRow>
+          <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>Topline</TopLine>
-                <Heading>Heading</Heading>
-                <Subtitle>Subtitle</Subtitle>
+                <TopLine>{topLine}</TopLine>
+                <Heading lightText={lightText}>{headline}</Heading>
+                <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to="home">Button</Button>
-                </BtnWrap>
+                  <Button to="home">{buttonLabel}</Button>
+                </BtnWrap> 
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img />
+                <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>
