@@ -24,7 +24,7 @@ export const InfoWrapper = styled.div`
 `
 export const InfoRow = styled.div`
   display: grid;
-  grid-auto-comlumns: minmax(auto, 1fr);
+  grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)}
 
@@ -35,12 +35,14 @@ export const InfoRow = styled.div`
 export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: col1;
+  grid-area: col2;
+  border: 5px solid yellow;
 `
 export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: col2;
+  grid-area: col1;
+  border: 1px solid blue;
 `
 
 export const TextWrapper = styled.div`
@@ -84,11 +86,13 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
+  border: 1px solid red;
 `
 
 export const Img = styled.img`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height:100vh;
   margin: 0 0 10px 0;
   padding-right: 0;
+  border: 1px solid red;
 `

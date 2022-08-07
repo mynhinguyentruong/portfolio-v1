@@ -1,7 +1,9 @@
 import React from 'react'
 
-import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Column2, ImgWrap, Img} from './InfoElements'
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './InfoElements'
 import { Button } from '../ButtonElement'
+
+import imageSVG from '../../images/svg-1.svg'
 
 
 export default function Info({ buttonLabel, lightText, imgStart, lightBg, id, topLine, headline, darkText, description, img, alt, primary, dark, dark2 }) {
@@ -33,7 +35,7 @@ export default function Info({ buttonLabel, lightText, imgStart, lightBg, id, to
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={img} alt={alt} />
+                <Img src={imageSVG} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>
