@@ -2,6 +2,7 @@ import React from 'react'
 import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
+import Info from '../components/InfoSection'
 
 export default function Home() {
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Hero />
+      <Info />
     </>
   )
 }
