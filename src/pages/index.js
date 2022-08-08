@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import Info from '../components/InfoSection'
 import Services from '../components/Services'
 import { homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/Data'
+import SignIn from './SignIn'
 
 export default function Home() {
 
