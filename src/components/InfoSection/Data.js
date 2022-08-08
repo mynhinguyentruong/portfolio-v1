@@ -1,4 +1,4 @@
-import imageSVG from '../../images/svg-1.svg'
+import imageSVG from '../../images/IMG_2330.png'
 import imageSVG2 from '../../images/svg-2.svg'
 import imageSVG3 from '../../images/svg-3.svg'
 
@@ -8,10 +8,10 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Premium Bank",
-  headline: "Unlimited Transactions with zero fees",
-  description: "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.",
-  buttonLabel: "Get Started",
+  topLine: "About Me",
+  headline: "",
+  description: "Hello! My name is Nhi and I enjoy creating things that live on the internet. My interest in web development started backe in 2017 - turns out hacking together a custom reblog button taught me a lot about HTML & CSS!",
+  buttonLabel: "My Resume",
   imgStart: false,
   img: imageSVG,
   alt: 'Car',
