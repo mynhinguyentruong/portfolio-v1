@@ -23,26 +23,25 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 `
 export const InfoRow = styled.div`
-  display: grid;
-  grid-auto-columns: minmax(auto, 1fr);
+  display: flex;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)}
-
+  grid-template-areas: ${({imgStart}) => (imgStart ? 'col2 col1' : 'col1 col2')};
+  
   @media screen and (max-width: 768px) {
+    display: grid;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)}
   }
 `
 export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: col2;
-  border: 5px solid yellow;
+  grid-area: col1;
 `
 export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: col1;
-  border: 1px solid blue;
+  grid-area: col2;
 `
 
 export const TextWrapper = styled.div`
@@ -86,7 +85,6 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
-  border: 1px solid red;
 `
 
 export const Img = styled.img`
@@ -94,5 +92,4 @@ export const Img = styled.img`
   height:100vh;
   margin: 0 0 10px 0;
   padding-right: 0;
-  border: 1px solid red;
 `
