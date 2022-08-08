@@ -3,6 +3,7 @@ import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Info from '../components/InfoSection'
+import Services from '../components/Services'
 import { homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/Data'
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Info {...homeObjOne} />
       <Info {...homeObjTwo} />
       <Info {...homeObjThree} />
+      <Services />
     </>
   )
 }
