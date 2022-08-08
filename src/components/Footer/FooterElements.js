@@ -67,6 +67,10 @@ export const FooterLink = styled(Link)`
 `
 
 export const SocialMedia = styled.section`
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1000px;
   width: 100%;
 `
@@ -80,6 +84,8 @@ export const SocialMediaWrap = styled.div`
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
+    height: 100vh;
+    justify-content: start;
   }
 `
 
