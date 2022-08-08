@@ -6,6 +6,7 @@ import Info from '../components/InfoSection'
 import Services from '../components/Services'
 import { homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/Data'
 import SignIn from './SignIn'
+import Footer from '../components/Footer'
 
 export default function Home() {
 
@@ -24,6 +25,7 @@ export default function Home() {
       <Info {...homeObjTwo} />
       <Info {...homeObjThree} />
       <Services />
+      <Footer />
     </>
   )
 }
