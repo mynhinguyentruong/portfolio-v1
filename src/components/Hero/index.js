@@ -20,7 +20,7 @@ export default function Hero() {
         <HeroH1>Nhi Nguyen.</HeroH1>
         <HeroH1>I build things for the web.</HeroH1>
         <HeroP>
-          I'm a frontend developer based in Toronto, Ontario specializing in building (and occasionally designing) exceptional, high-quality websites and applications.
+          I'm a frontend developer based in Toronto, specializing in building (and occasionally designing) exceptional, high-quality websites and applications.
         </HeroP>
         <HeroBtnWrapper>
           <Button 
